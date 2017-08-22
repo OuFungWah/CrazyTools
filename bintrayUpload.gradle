@@ -2,8 +2,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 // This is the library version used when deploying the artifact
 version = "1.0.0"
-def siteUrl = 'https://git.oschina.net/crazycodeboy/ScanProj'      // 项目的主页
-def gitUrl = 'https://git.oschina.net/crazycodeboy/ScanProj.git'   // Git仓库的url
+def siteUrl = 'https://github.com/OuFungWah/CrazyTools'      // 项目的主页
+def githubUrl = 'https://github.com/OuFungWah/CrazyTools.git'   // Git仓库的url
 group = "com.crazywah.crazytools"                                        // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
@@ -61,7 +61,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "ScanProj"    //发布到JCenter上的项目名字
+        name = "CrazyTools"    //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
